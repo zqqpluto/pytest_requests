@@ -14,7 +14,7 @@ class Test_httpbin():
         print(response_data)
 
         assert 200 == r.status_code
-        assert LOCAL_IP == response_data["origin"]
+        # assert LOCAL_IP == response_data["origin"]
 
     def test_post_method(self):
         url = BASE_URL + POST_TEST_URL
